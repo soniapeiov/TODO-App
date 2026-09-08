@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Todo</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    header { background: #5B2EBF; color: white; padding: 16px; font-size: 20px; font-weight: bold; }
+    #list { padding: 10px; }
+    .item { display: flex; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid #eee; cursor: pointer; }
+    .done-icon { color: green; }
+    footer { padding: 16px; }
+    button { width: 100%; padding: 14px; background: #5B2EBF; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>ToDo</header>
+  <div id="list"></div>
+  <footer>
+    <button id="btn-add">Add New Item</button>
+  </footer>
+  <script src="renderer.js"></script>
+</body>
+</html>

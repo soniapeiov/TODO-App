@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Item</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    header { background: #5B2EBF; color: white; padding: 16px; }
+    .form { padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+    label { font-size: 14px; color: #333; }
+    input[type=text] { border: none; border-bottom: 1px solid #ccc; padding: 8px 0; font-size: 16px; outline: none; }
+    .row { display: flex; justify-content: space-between; align-items: center; }
+    button { width: 100%; padding: 14px; background: #5B2EBF; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <header>←</header>
+  <div class="form">
+    <label>Name</label>
+    <input type="text" id="name" />
+    <label>Notes</label>
+    <input type="text" id="notes" />
+    <div class="row">
+      <label>Done</label>
+      <input type="checkbox" id="done" />
+    </div>
+    <button id="btn-save">Save</button>
+    <button id="btn-delete">Delete</button>
+    <button id="btn-cancel">Cancel</button>
+  </div>
+  <script src="item.js"></script>
+</body>
+</html>
